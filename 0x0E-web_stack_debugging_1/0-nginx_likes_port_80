@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Setting up server to curl port 80 with no issues
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+service nginx start
